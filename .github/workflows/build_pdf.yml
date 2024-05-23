@@ -25,11 +25,16 @@ jobs:
       - name: Compile LaTeX to PDF
         run: docker run --rm -v "${{ github.workspace }}:/workspace" latex-builder
 
+      - name: Convert PDF to PNG
+        run: make png
+
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v2
         with:
           name: compiled-pdf
-          path: main.pdf
+          path: |
+            main.pdf
+            resume.png
 
   deploy:
     needs: build
@@ -49,6 +54,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-          git add main.pdf
-          git commit -m 'chore: add compiled PDF [skip ci]'
+          git add main.pdf resume.png
+          git commit -m 'chore: add compiled PDF and CV image [skip ci]'
           git push
