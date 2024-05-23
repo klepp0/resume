@@ -23,7 +23,7 @@ jobs:
         run: make build
 
       - name: Compile LaTeX to PDF
-        run: make pdf
+        run: docker run --rm -v "${{ github.workspace }}:/workspace" latex-builder
 
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v2
