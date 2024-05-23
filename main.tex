@@ -18,7 +18,7 @@
 % Custom settings
 \setlength\parindent{0pt}
 \setlength\parskip{0em}
-\setlength{\columnsep}{1.5cm}
+\setlength{\columnsep}{1cm}
 \setlist[itemize]{left=0pt, label=\textbullet, itemsep=0.0em, parsep=0pt}
 
 % Custom section formatting
@@ -41,6 +41,7 @@
 
 % First column (wide)
 \begin{minipage}[t]{0.7\textwidth-0.5\columnsep}
+    \vspace{0pt}
 	% Profile section
 	\noindent\makebox[\columnwidth]{%
 		\begin{minipage}{0.3\linewidth}
@@ -54,7 +55,7 @@
 			\vspace{0pt}
 			\textbf{\Huge John Doe}
 			\vfill
-			\textit{\large{Fullstack Developer Extraordinaire}}
+			\textit{\large{Fullstack Developer}}
 		\end{minipage}
 	}
 
@@ -116,11 +117,10 @@
 
     \vfill\null
 \end{minipage}
-
-\hspace{\columnsep} % Add space between the columns
-
+\hfill
 % Second column (slim)
 \begin{minipage}[t]{0.3\textwidth-0.5\columnsep}
+    \vspace{0pt}
 	% Profile description
 	\sectiontitle{Profile}
 	I'm a passionate software developer who loves crafting products that people love. I'm a huge lover of Open Source and also volunteer in many communities. I care about making the customers happy, testing, accessibility, teamwork, and code quality. When I'm not coding, I'm probably thinking about coding.
@@ -155,4 +155,3 @@
 \end{minipage}
 
 \end{document}
-
