@@ -4,6 +4,7 @@ FROM texlive/texlive
 # Install necessary tools
 RUN apt-get update && apt-get install -y \
     make \
+    poppler-utils \
     && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory
