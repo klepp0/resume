@@ -19,7 +19,7 @@
 % Custom settings
 \setlength\parindent{0pt}
 \setlength\parskip{0em}
-\setlength{\columnsep}{2em}
+\setlength{\columnsep}{1.5cm}
 \setlist[itemize]{left=0pt, label=\textbullet, itemsep=0.0em, parsep=0pt}
 
 % Custom section formatting
@@ -40,7 +40,7 @@
 \begin{document}
 \pagestyle{empty}
 
-% Two columns with the first one wider
+% First column (wide)
 \begin{minipage}[t]{0.7\textwidth-0.5\columnsep}
 	% Profile section
 	\noindent\makebox[\columnwidth]{%
@@ -115,9 +115,12 @@
 	\end{itemize}
 	\texttt{Python}
 
-    \vfill
+    \vfill\null
 \end{minipage}
-\hspace{\columnsep}
+
+\hspace{\columnsep} % Add space between the columns
+
+% Second column (slim)
 \begin{minipage}[t]{0.3\textwidth-0.5\columnsep}
 	% Profile description
 	\sectiontitle{Profile}
