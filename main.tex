@@ -1,0 +1,127 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{lmodern} % Use Latin Modern fonts
+\renewcommand{\familydefault}{\sfdefault} % Use a sans-serif font by default
+\usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+% Adjust the page margins
+\geometry{top=1cm, bottom=1cm, left=1.5cm, right=1.5cm}
+
+% Custom settings
+\setlength\parindent{0pt}
+\setlength\parskip{0em}
+\setlength{\columnsep}{1cm}
+\setlist[itemize]{left=0pt, label=\textbullet, itemsep=0.0em, parsep=0pt}
+
+% Custom section formatting
+\newcommand{\sectiontitle}[1]{\textbf{\Large #1}\par\vspace{-1em}\noindent\rule{\linewidth}{0.3mm}\par\vspace{0.3em}}
+
+\begin{document}
+\pagestyle{empty}
+
+% Two columns with the first one wider
+\begin{multicols}{2}
+	% Profile section
+	\noindent\makebox[\columnwidth]{%
+		\begin{minipage}{0.3\linewidth}
+			\begin{tikzpicture}
+				\clip (0,0) circle(0.5\textwidth);
+                \node at (0,0) {\includegraphics[width=\textwidth]{johndoe.png}};
+			\end{tikzpicture}
+		\end{minipage}
+		\begin{minipage}{0.6\linewidth}
+			\raggedleft
+			\vspace{0pt}
+			\textbf{\Huge John Doe}
+			\vfill
+			\textit{\large{Fullstack Developer}}
+		\end{minipage}
+	}
+
+	\vspace{1em}
+
+	% Contact information
+	\noindent\makebox[\columnwidth]{%
+		\begin{minipage}[c]{0.9\columnwidth}
+			\centering
+			\faLinkedinSquare \hspace{0.3em} john-doe \hfill \faGithub \hspace{0.3em} johndoe \hfill \faMapMarker \hspace{0.3em} Germany\\
+			\faPhone \hspace{0.3em} (123) 456-7890  \hfill \faEnvelope \hspace{0.3em} johndoe@example.com\\
+		\end{minipage}
+	}
+
+	\vspace{1em}
+
+    % Experience
+	\sectiontitle{Experience}
+
+	\textbf{\large Software Developer} \hfill \textit{Tech Company Inc.}\\
+	\textit{June 2019 -- Present}
+	\begin{itemize}
+		\item Developed and maintained web applications using React and Node.js.
+		\item Collaborated with cross-functional teams to define and achieve project goals.
+		\item Implemented RESTful APIs and integrated third-party services.
+		\item Improved application performance, reducing load time by 30%.
+	\end{itemize}
+	\vspace{0.5em}
+
+	\textbf{\large Intern} \hfill \textit{Another Tech Company}\\
+	\textit{June 2018 -- August 2018}
+	\begin{itemize}
+		\item Assisted in the development of an internal tool for data analysis.
+		\item Participated in code reviews and contributed to the improvement of code quality.
+		\item Wrote unit tests to ensure code reliability.
+	\end{itemize}
+
+	\vspace{1em}
+
+
+    % Project section
+	\sectiontitle{Projects}
+
+	\textbf{\large Project One}
+	\begin{itemize}
+		\item Developed a full-stack web application for task management using React and Node.js.
+		\item Implemented user authentication and authorization with JWT.
+	\end{itemize}
+	\vspace{0.5em}
+    
+	\textbf{\large Project Two}
+	\begin{itemize}
+		\item Created a machine learning model to predict stock prices using Python.
+		\item Visualized data trends and model performance with Matplotlib and Seaborn.
+	\end{itemize}
+
+	\vfill\null
+	\columnbreak
+
+	% Profile description
+	\sectiontitle{Profile}
+	I'm a passionate software developer who loves crafting products that people love. I'm a huge lover of Open Source and also volunteer in many communities. I care about making the customers happy, testing, accessibility, teamwork, and code quality.
+
+	\vspace{1em}
+
+	% Skills section
+	\sectiontitle{Skills}
+	\begin{itemize}
+		\item \textbf{Programming Languages:} Python, Java, C++
+		\item \textbf{Web Development:} HTML, CSS, JavaScript, React
+		\item \textbf{Databases:} MySQL, PostgreSQL, MongoDB
+		\item \textbf{Tools:} Git, Docker, Jenkins
+	\end{itemize}
+
+	\vspace{1em}
+
+	\sectiontitle{Open Source and Community}
+	I have contributed to projects such as Mock Service Worker (used by thousands) and Testing Library (used by millions). I also volunteer in communities like KCD and Remix.
+
+\end{multicols}
+
+\end{document}
