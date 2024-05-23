@@ -2,7 +2,7 @@
 
 ![Markdown Lint](https://github.com/klepp0/resume/actions/workflows/build_pdf.yml/badge.svg)
 
-![CV Image](./cv_image.png)
+![Resume](./resume.png)
 
 Welcome to the ultimate LaTeX template for crafting the most epic 1-page resume for none other than the legendary John Doe! If you're here, you're probably looking to create a resume that screams "I mean business" while subtly whispering "I'm also pretty fun." Look no further, friend.
 
@@ -53,12 +53,6 @@ Keep your workspace tidy. Clean up all those auxiliary files.
 ```shell
 make clean
 ```
-
-### The Files
-
-- main.tex: The heart of John Doe's resume.
-- main.pdf: The beautifully typeset PDF.
-- cv_image.png: A snapshot of John Doe's magnificence.
 
 ## John Doe: A Man of Mystery and Talent 🕵️‍♂️
 
