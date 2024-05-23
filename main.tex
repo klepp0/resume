@@ -25,6 +25,17 @@
 % Custom section formatting
 \newcommand{\sectiontitle}[1]{\textbf{\Large #1}\par\vspace{-1em}\noindent\rule{\linewidth}{0.3mm}\par\vspace{0.3em}}
 \newcommand{\slashsep}{\hspace{3mm}/\hspace{3mm}}
+\newcommand{\rating}[1]{
+    \begin{tikzpicture}
+        \foreach \i in {1,...,5} {
+            \ifnum\i>#1
+                \fill[gray!30] (\i*0.3,0) circle (0.1);
+            \else
+                \fill[black] (\i*0.3,0) circle (0.1);
+            \fi
+        }
+    \end{tikzpicture}
+}
 
 \begin{document}
 \pagestyle{empty}
@@ -122,6 +133,16 @@
 		\item \textbf{Databases:} MySQL, PostgreSQL, MongoDB
 		\item \textbf{Tools:} Git, Docker, Jenkins
 	\end{itemize}
+
+	\vspace{1em}
+
+	% Language section
+	\sectiontitle{Languages}
+	\begin{tabular}{lr}
+		\textbf{English} & \rating{5} \\
+		\textbf{German}  & \rating{4} \\
+		\textbf{Spanish} & \rating{3} \\
+	\end{tabular}
 
 	\vspace{1em}
 
