@@ -2,11 +2,12 @@ name: LaTeX Build and Deploy
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - '**/*.tex'
   pull_request:
-    branches:
-      - main
+    paths:
+      - '**/*.tex'
+
 
 jobs:
   build:
