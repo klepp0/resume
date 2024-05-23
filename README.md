@@ -24,35 +24,35 @@ Welcome to the ultimate LaTeX template for crafting the most epic 1-page resume 
 
 1. **Build the Docker Image** 🛠️
 
-Run this command to build the Docker image. It's like baking a cake, but less messy.
+   Run this command to build the Docker image. It's like baking a cake, but less messy.
 
-```shell
-make build
-```
+   ```shell
+   make build
+   ```
 
 2. **Compile the LaTeX to PDF** 📄
 
-Turn that LaTeX code into a sleek PDF with a single command. Voilà!
+   Turn that LaTeX code into a sleek PDF with a single command. Voilà!
 
-```shell
-make pdf
-```
+   ```shell
+   make pdf
+   ```
 
 3. **Convert the First Page to PNG** 🖼️
 
-Because sometimes you just need a picture. Create a PNG image of the first page.
+   Because sometimes you just need a picture. Create a PNG image of the first page.
 
-```shell
-make png
-```
+   ```shell
+   make png
+   ```
 
 4. **Clean Up** 🧹
 
-Keep your workspace tidy. Clean up all those auxiliary files.
+   Keep your workspace tidy. Clean up all those auxiliary files.
 
-```shell
-make clean
-```
+   ```shell
+   make clean
+   ```
 
 ## John Doe: A Man of Mystery and Talent 🕵️‍♂️
 
