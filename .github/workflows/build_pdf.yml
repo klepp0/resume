@@ -34,7 +34,7 @@ jobs:
         with:
           name: compiled-pdf
           path: |
-            main.pdf
+            resume.pdf
             resume.png
 
   deploy:
