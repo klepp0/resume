@@ -11,5 +11,5 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /workspace
 
 # Assume the LaTeX document to build is named main.tex, adjust as necessary
-CMD pdflatex -interaction=nonstopmode main.tex && \
-    pdflatex -interaction=nonstopmode main.tex
+CMD pdflatex -jobname=resume -interaction=nonstopmode main.tex && \
+    pdflatex -jobname=resume -interaction=nonstopmode main.tex

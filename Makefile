@@ -10,12 +10,12 @@ pdf:
 	docker run --rm -v "`pwd`:/workspace" latex-builder
 	@echo "LaTeX files compiled successfully."
 	@echo "Opening the generated PDF file..."
-	open --background main.pdf
+	open --background resume.pdf
 
 # Convert the first page of the PDF to PNG
 png:
 	@echo "Converting the first page of the PDF to PNG..."
-	docker run --rm -v "`pwd`:/workspace" -w /workspace latex-builder sh -c "pdftoppm -png -singlefile main.pdf resume"
+	docker run --rm -v "`pwd`:/workspace" -w /workspace latex-builder sh -c "pdftoppm -png -singlefile resume.pdf resume"
 	@echo "PNG image of the first page of the PDF created successfully."
 
 # Clean up the LaTeX build files
