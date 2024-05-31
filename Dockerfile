@@ -8,8 +8,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory
-WORKDIR /workspace
+WORKDIR /workspace/src
 
 # Assume the LaTeX document to build is named main.tex, adjust as necessary
-CMD pdflatex -jobname=resume -interaction=nonstopmode main.tex && \
-    pdflatex -jobname=resume -interaction=nonstopmode main.tex
+CMD pdflatex -interaction=nonstopmode main.tex && \
+    pdflatex -interaction=nonstopmode main.tex

@@ -2,7 +2,7 @@
 
 ![Markdown Lint](https://github.com/klepp0/resume/actions/workflows/build_pdf.yml/badge.svg)
 
-![Resume](./resume.png)
+![Resume](./main.png)
 
 Welcome to the ultimate LaTeX template for crafting the most epic 1-page resume for none other than the legendary John Doe! If you're here, you're probably looking to create a resume that screams "I mean business" while subtly whispering "I'm also pretty fun." Look no further, friend.
 

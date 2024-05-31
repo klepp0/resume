@@ -2,12 +2,17 @@ name: LaTeX Build and Deploy
 
 on:
   push:
+    branches:
+      - main
     paths:
-      - '**/*.tex'
+      - "**/*.tex"
+      - ".github/workflows/*.yml"
   pull_request:
+    branches:
+      - main
     paths:
-      - '**/*.tex'
-
+      - "**/*.tex"
+      - ".github/workflows/*.yml"
 
 jobs:
   build:
@@ -34,8 +39,8 @@ jobs:
         with:
           name: compiled-pdf
           path: |
-            resume.pdf
-            resume.png
+            src/main.pdf
+            main.png
 
   deploy:
     needs: build
@@ -55,6 +60,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-          git add --force resume.pdf resume.png
+          git add --force src/main.pdf main.png
           git commit -m 'chore: add compiled PDF and CV image [skip ci]'
           git push

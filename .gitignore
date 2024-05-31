@@ -1,5 +1,5 @@
-*.pdf
-*.png
+src/main.pdf
+main.png
 
 # Created by https://www.toptal.com/developers/gitignore/api/latex,linux,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=latex,linux,macos,windows
