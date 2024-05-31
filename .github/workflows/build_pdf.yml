@@ -34,7 +34,7 @@ jobs:
         with:
           name: compiled-pdf
           path: |
-            main.pdf
+            src/main.pdf
             main.png
 
   deploy:
@@ -55,6 +55,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-          git add --force main.pdf main.png
+          git add --force src/main.pdf main.png
           git commit -m 'chore: add compiled PDF and CV image [skip ci]'
           git push
