@@ -32,7 +32,7 @@ Welcome to the ultimate LaTeX template for crafting the most epic 1-page resume 
 
 2. **Compile the LaTeX to PDF** 📄
 
-   Turn that LaTeX code into a sleek PDF with a single command. Voilà!
+   Turn that LaTeX code into a sleek [PDF](./src/main.pdf) with a single command. Voilà!
 
    ```shell
    make pdf
