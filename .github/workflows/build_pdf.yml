@@ -2,12 +2,17 @@ name: LaTeX Build and Deploy
 
 on:
   push:
+    branches:
+      - main
     paths:
-      - '**/*.tex'
+      - "**/*.tex"
+      - ".github/workflows/*.yml"
   pull_request:
+    branches:
+      - main
     paths:
-      - '**/*.tex'
-
+      - "**/*.tex"
+      - ".github/workflows/*.yml"
 
 jobs:
   build:
