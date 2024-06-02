@@ -3,6 +3,15 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "**/*.tex"
+      - ".github/workflows/*.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "**/*.tex"
+      - ".github/workflows/*.yml"
 
 jobs:
   build-and-deploy:
