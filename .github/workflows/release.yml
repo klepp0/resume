@@ -16,14 +16,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-         fetch-depth: 0
+          fetch-depth: 0
 
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v5
         with:
           # See https://github.com/marketplace/actions/conventional-changelog-action
           # for more configuration options
-          git-message: 'chore(release): {version}'
-          git-user-name: 'github-actions[bot]'
-          git-user-email: 'github-actions[bot]@users.noreply.github.com'
-          release-count: '0'
+          git-message: "chore(release): {version}"
+          git-user-name: "github-actions[bot]"
+          git-user-email: "github-actions[bot]@users.noreply.github.com"
+          release-count: "0"
