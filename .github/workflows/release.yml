@@ -5,8 +5,11 @@ on:
       - main
 
 jobs:
-  changelog:
-    needs: deploy
+  build-and-deploy:
+    uses: ./.github/workflows/build_pdf.yml
+
+  release:
+    needs: build-and-deploy
     runs-on: ubuntu-latest
 
     steps:
