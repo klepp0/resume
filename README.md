@@ -1,6 +1,13 @@
 # John Doe's Super-Awesome LaTeX Resume Template 🚀
 
+<div align="center">
+
+![Latest Version](https://img.shields.io/github/v/tag/klepp0/nvim?label=latest%20version)
 ![Markdown Lint](https://github.com/klepp0/resume/actions/workflows/build_pdf.yml/badge.svg)
+![Releases](https://github.com/klepp0/resume/actions/workflows/release.yml/badge.svg)
+
+</div>
+
 
 ![Resume](./main.png)
 
