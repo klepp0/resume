@@ -61,10 +61,14 @@ Welcome to the ultimate LaTeX template for crafting the most epic 1-page resume 
    make clean
    ```
 
+### Docker Who? 🐳
+
+Something unexpected happened, or you just want to compile the PDF without installing all those external dependencies? Fear not! The easiest workaround is to create an [Overleaf](https://www.overleaf.com) project. Simply copy all the content from the [`src`](./src) directory into your new Overleaf project. Voilà! Here’s the cake, eat it, and don’t worry about the dishes!
+
 ## John Doe: A Man of Mystery and Talent 🕵️‍♂️
 
 Who is John Doe? He's a mystery wrapped in an enigma, with a resume that dazzles. Use this template to channel your inner John Doe and create a resume that’s out of this world.
 
 ---
 
-Happy TeX-ing! 🎉
+Happy TeX-ing and may your resumes always impress! 🌟
